@@ -1,16 +1,16 @@
 import React from "react";
 
-export const DetailModal = ({ setShowDetail, selectedContactDetail }) => {
+const DetailModal = ({ setShowDetail, selectedContactDetail }) => {
   return (
     <>
       <div className="modal-dialog modal-dialog-scrollable">
         <div className="modal-dialog" style={{ minWidth: "500px" }}>
           <div className="modal-content">
-            <div class="modal-header">
+            <div className="modal-header">
               <h5>{"Modal C"}</h5>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
@@ -25,7 +25,7 @@ export const DetailModal = ({ setShowDetail, selectedContactDetail }) => {
               </button>
             </div>
 
-            <div class="modal-body p-0">
+            <div className="modal-body p-0">
               <table className="table">
                 <thead>
                   <tr>
@@ -53,3 +53,4 @@ export const DetailModal = ({ setShowDetail, selectedContactDetail }) => {
     </>
   );
 };
+export default DetailModal;

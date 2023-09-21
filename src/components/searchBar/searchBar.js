@@ -16,7 +16,7 @@ export const SearchBar = (props) => {
             onChange={handleSearchQuery}
             onKeyDown={handleSearch}
             id="form1"
-            class="form-control"
+            className="form-control"
           />
         </div>
       </div>
