@@ -30,14 +30,16 @@ const Contacts = ({ isModalA, title }) => {
   const loadContacts = async (page) => {
     if (location.pathname === "/modalA") {
       params = {
-        companyId: 171,
+        companyId: 560,
         page: page,
+        noGroupDuplicates: 1,
       };
     } else {
       params = {
-        companyId: 171,
+        companyId: 560,
         page: page,
         countryId: 226,
+        noGroupDuplicates: 1,
       };
     }
 
@@ -164,7 +166,7 @@ const Contacts = ({ isModalA, title }) => {
             searchText={searchText}
             contactsIDs={contactsIDs}
             contactList={contactList}
-            isModalA={isModalA}
+            isModalA={true}
             isEven={isEven}
             handleOnlyEvenIDs={handleOnlyEvenIDs}
             isLoading={isLoading}
