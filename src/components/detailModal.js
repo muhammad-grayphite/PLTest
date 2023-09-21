@@ -7,7 +7,7 @@ const DetailModal = ({ setShowDetail, selectedContactDetail }) => {
         <div className="modal-dialog" style={{ minWidth: "500px" }}>
           <div className="modal-content">
             <div className="modal-header">
-              <h5>{"Modal C"}</h5>
+              <h5>{"Contact Details"}</h5>
               <button
                 type="button"
                 className="close"

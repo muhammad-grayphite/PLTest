@@ -28,10 +28,6 @@
 
 To set these environment variables, follow these steps:
 
-- Create a file named `.env` in the root directory of your project if it doesn't already exist.
+- Copy the `.env.example` to `.env`
 
-- Open the `.env` file in a text editor and define the variables like this:
-
-- `REACT_APP_AUTH_TOKEN`: This variable is used to store the authentication token required for accessing protected resources in the application.
-
-- `REACT_APP_BASE_URL`: The base URL of the API endpoint. This variable defines where the application should send API requests.
+- Add the Authentication Token and Base URL (without the endpoint e.g. https://api.dev.pastorsline.com/api).

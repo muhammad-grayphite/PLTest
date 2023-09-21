@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/modalA" element={<Contacts title={"Modal A"} />} />
-        <Route path="/modalB" element={<Contacts title={"Modal B"} />} />
+        <Route path="/modalA" element={<Contacts title={"All Contacts"} />} />
+        <Route path="/modalB" element={<Contacts title={"US Contacts"} />} />
       </Routes>
     </div>
   );
