@@ -26,21 +26,18 @@ const ModalView = ({
     <div
       className="modal-lg modal-dialog"
       style={{
-        // position: "fixed",
         top: 0,
         left: 0,
-        // width: "100%",
-        // height: "100%",
         backgroundColor: "rgba(0, 0, 0, 0.2)",
         zIndex: 9999,
       }}
     >
       <div className="modal-content">
-        <div class="modal-header">
+        <div className="modal-header">
           <h5>{title}</h5>
           <button
             type="button"
-            class="close"
+            className="close"
             data-dismiss="modal"
             aria-label="Close"
           >
@@ -50,7 +47,7 @@ const ModalView = ({
           </button>
         </div>
 
-        <div class="modal-body">
+        <div className="modal-body">
           <div>
             <Link to="/modalA">
               <Button
@@ -143,7 +140,7 @@ const ModalView = ({
             </Scrollbars>
           </div>
         </div>
-        <div class="modal-footer d-flex justify-content-start">
+        <div className="modal-footer d-flex justify-content-start">
           {isModalA && (
             <Checkbox handleOnlyEvenIDs={handleOnlyEvenIDs} isEven={isEven} />
           )}

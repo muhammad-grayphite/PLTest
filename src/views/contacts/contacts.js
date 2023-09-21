@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import ModalView from "../../components/modalView";
-import { DetailModal } from "../../components/detailModal";
+import DetailModal from "../../components/detailModal";
 import apiService from "../../utils/apiServices";
 
-export const Contacts = ({ isModalA, title }) => {
+const Contacts = ({ isModalA, title }) => {
   const [showDetail, setShowDetail] = useState(false);
   const [selectedContactDetail, setSelectedContactDetail] = useState(null);
   const [contactsIDs, setContactsIDs] = useState([]);
@@ -31,13 +31,11 @@ export const Contacts = ({ isModalA, title }) => {
     if (location.pathname === "/modalA") {
       params = {
         companyId: 171,
-        // query: "",
         page: page,
       };
     } else {
       params = {
         companyId: 171,
-        // query: "",
         page: page,
         countryId: 226,
       };
@@ -126,7 +124,6 @@ export const Contacts = ({ isModalA, title }) => {
       }
     } catch (error) {
       console.log("something went wrong", error);
-      // setContactsIDs(contactsIdsCopy);
       setContactsIDs([]);
     } finally {
       setIsLoading(false);
@@ -196,3 +193,5 @@ export const Contacts = ({ isModalA, title }) => {
     </>
   );
 };
+
+export default Contacts;
